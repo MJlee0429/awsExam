@@ -25,8 +25,13 @@ repositories {
 }
 
 dependencies {
+    //1장
     compile('org.springframework.boot:spring-boot-starter-web')
+    //2장
     compile('org.projectlombok:lombok')
+    //3장
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('com.h2database:h2')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
