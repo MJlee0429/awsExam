@@ -21,6 +21,7 @@ public class HelloControllerTest {
     @Autowired  // 스프링이 관리하는 bean을 주입 받는다.
     private MockMvc mvc;    //웹 API를 테스트 할 떄 사용한다, HTTP GET,POST등에 대한 API 테스트 가능
 
+    //hello test
     @Test
     public void hello가_리턴된다() throws Exception{
         String hello = "hello";
@@ -33,7 +34,7 @@ public class HelloControllerTest {
     @Test
     public void helloDto가_리턴된다() throws Exception{
         String name = "hello";
-        int amount = 1000;
+        int amount = 1000; 
 
         mvc.perform(get("/hello/dto")
                 .param("name",name)
